@@ -75,9 +75,8 @@
         </div>
       </section>
     </div>
-    <div class="index-content">
-      <div class="index-content-left">
-        <section class="contacts">
+    <div class="index-content clearfix">
+        <section class="contacts index-content-left">
           <h2 class="title">Контактная информация</h2>
           <p>
             Баршершоп "Бородинский"<br>
@@ -89,24 +88,27 @@
             Пн - Пт: с 10:00 до 22:00<br>
             Сб - Вс: с 10:00 до 19:00
           </p>
+          <div class="gallery-btns">
+            <a href="#" class="btn">Как проехать</a>
+            <a href="#" class="btn">Обратная связь</a>
+          </div>
         </section>
-      </div>
-      <div class="index-content-right">
-        <form action="" class="entry">
-          <h2 class="title">Записаться</h2>
-          <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-          <input type="date" name="date" id="date" placeholder="Дата">
-          <input type="time" name="time" id="time" placeholder="Время">
-          <input type="text" name="client-name" id="client-name" placeholder="Ваше имя">
-          <input type="tel" name="tel" id="tel" placeholder="Телефон">
-          <input type="submit" value="Отправить">
-        </form>
+        <div class="index-content-right">
+          <form action="" class="entry">
+            <h2 class="title">Записаться</h2>
+            <p>Укажите желаемую дату и время и мы свяжемся <br>с вами для подтверждения брони</p>
+            <input type="text" name="date" id="date" placeholder="Дата">
+            <input type="text" name="time" id="time" placeholder="Время">
+            <input type="text" name="client-name" id="client-name" placeholder="Ваше имя">
+            <input type="text" name="tel" id="tel" placeholder="Телефон">
+            <input type="submit" value="Отправить">
+          </form>
       </div>
     </div>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer clearfix">
     <div class="container">
-      <section class="column column-contacts">
+      <section class="footer-contacts">
         <p>
           Баршершоп "Бородинский"<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
@@ -114,20 +116,20 @@
           Телефон: +7(495)666-02-66
         </p>
       </section>
-      <section class="column column-social">
+      <section class="footer-social">
         <p>Давайте дружить!</p>
         <a href="https://vk.com" class="btn btn-social btn-vk">Вк</a>
         <a href="https://facebook.com" class="btn btn-social btn-fb">Фб</a>
         <a href="https://instagram.com" class="btn btn-social btn-inst">Инст</a>
       </section>
-      <section class="column column-copyright">
+      <section class="footer-copyright">
         <p>Разработано:</p>
-        <a href="https://htmlacademy.ru" class="btn btn-social">Htmlacademy.ru</a>
+        <a href="https://htmlacademy.ru" class="btn btn-copyright">Htmlacademy.ru</a>
       </section>
     </div>
   </footer>
 
-  <section class="popup-form">
+  <section class="popup-form" style="display:none">
     <form action="" method="post">
       <h2 class="title">Личный кабинет</h2>
       <span>Введите, пожалуйста, свой логин и пароль</span>
@@ -141,7 +143,7 @@
       <input type="submit" value="Войти">
     </form>
   </section>
-  <section class="popup-map">
+  <section class="popup-map" style="display:none">
     <img src="img/map.jpg" alt="Карта проезда">
   </section>
 </body>
