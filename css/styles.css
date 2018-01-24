@@ -7,6 +7,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: black;
+  background-image: url(../img/background.jpg);
+  background-position: top center;
 }
 
 .clearfix::after {
@@ -23,6 +26,7 @@ body {
 
 .page-header {
   background-color: black;
+  margin-bottom: 60px;
 }
 
 .navigation {
@@ -57,4 +61,10 @@ body {
 
 .user-block {
   float: right;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 80px;
 }
