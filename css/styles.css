@@ -6,10 +6,55 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
 }
 
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+
+.container {
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.page-header {
+  background-color: black;
+}
+
+.navigation {
+
+}
+
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.navigation-item {
+  display: inline-block;
+}
+
+.navigation-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 25px 20px;
+}
+
+.navigation-link:hover,
+.navigation-link:active {
+  background-color: #242424;
+}
+
+.user-block {
+  float: right;
 }
