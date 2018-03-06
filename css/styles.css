@@ -1,0 +1,380 @@
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  background: #000000 url('../img/background.jpg') no-repeat center top;
+}
+
+.container {
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.page-header {
+  background-color: black;
+  margin-bottom: 60px;
+}
+
+.navigation {
+  width: 780px;
+  min-height:  70px;
+}
+
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-item {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+.navigation-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 25px 20px;
+}
+
+.navigation-link:hover,
+.navigation-link:active {
+  background-color: #242424;
+}
+
+.user-block {
+  max-width: 140px;
+  min-height: 70px;
+  text-align: right;
+  line-height: 20px;
+}
+
+.user-block .navigation-link {
+  padding-left: 50px;
+  position: relative;
+}
+
+.user-block .navigation-link::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: red;
+  position: absolute;
+  top: 27px;
+  left: 25px;
+  background: url('../img/sprite.png');
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.user-block:hover .navigation-link::before {
+  opacity: 1;
+}
+
+
+.page-header .container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.features {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-item {
+  min-height: 175px;
+  width: 300px;
+}
+
+ .features-title {
+  color: #f7f4f1;
+  font-size: 23px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.features-title::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  margin-left: -10px;
+  transform: rotate(45deg);
+}
+
+.features-description {
+  color: #f7f4f1;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.index-content {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  background: url('../img/index-content-shadow.png') no-repeat center, #f8f5f2 url('../img/index-content-bg.jpg');
+  padding: 50px 80px;
+  margin-bottom: 35px;
+}
+.index-content-left {
+  width: 380px;
+  min-height: 330px;
+  position: relative;
+}
+
+.index-content-right {
+  width: 300px;
+  min-height: 330px;
+}
+
+.title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.news-preview {
+  margin-bottom: 25px;
+}
+
+.index-content p {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.news-preview p time {
+  text-transform: none;
+}
+
+.btn  {
+  display: inline-block;
+  vertical-align:middle;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 43px;
+  width: 140px;
+  height: 43px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: black;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #663d15;
+}
+
+.gallery-block {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 7px;
+  background-color: white;
+  margin-bottom: 40px;
+  height: 164px;
+}
+
+.gallery-btns {
+  font-size: 0;
+}
+
+.gallery-btns .btn:first-child {
+  margin-right: 20px;
+}
+
+.contacts p {
+  margin-bottom: 26px;
+}
+
+.entry {
+  font-size: 0;
+}
+.entry input[type="text"] {
+  width: 140px;
+  color: black;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0 15px;
+  line-height: 43px;
+  background-color: #f9f6f3;
+  border: 2px solid black;
+  margin: 0 20px 20px 0;
+}
+
+.entry input[type="text"]:nth-child(2n+2) {
+  margin-right: 0;
+}
+
+.entry input[type="text"]:focus {
+  outline: none;
+  border-color: #663d15;
+}
+
+.entry input[type="submit"] {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 43px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: black;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.entry input[type="submit"]:hover,
+.entry input[type="submit"]:active {
+  background-color: #663d15;
+}
+
+.page-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: url('../img/page-footer-bg.jpg');
+}
+
+.page-footer .container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.page-footer p {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin: 0;
+}
+
+.link {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.footer-contacts {
+  width: 320px;
+  min-height: 90px;
+  margin-right: 60px;
+}
+
+.footer-social {
+  width: 180px;
+  min-height: 90px;
+  padding: 0 20px;
+  font-size: 0;
+}
+.footer-social p,
+.footer-copyright p{
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.btn-social {
+  width: 43px;
+  height: 43px;
+  padding: 0;
+  margin-right: 5px;
+}
+
+.btn-social:hover,
+.btn-copyright:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-vk {
+  background: url('../img/sprite.png') no-repeat, #000;
+  background-position: 9px -27px;
+}
+
+.btn-vk:hover {
+  background-position: 9px -68px;
+}
+
+.btn-fb {
+  background: url('../img/sprite.png') no-repeat, #000;
+  background-position: 15px -113px;
+}
+
+.btn-fb:hover {
+  background-position: 15px -160px;
+}
+
+.btn-inst {
+  background: url('../img/sprite.png') no-repeat, #000;
+  background-position: 12px -207px;
+}
+.btn-inst:hover {
+  background-position: 12px -253px;
+}
+
+.btn-copyright {
+  margin: 0 auto;
+}
+
+.btn-social:last-child {
+  margin-right: 0;
+}
+
+.footer-copyright {
+  width: 160px;
+  min-height: 90px;
+  padding: 0 10px;
+  margin-left: auto;
+}
