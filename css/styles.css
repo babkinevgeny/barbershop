@@ -340,11 +340,11 @@ body {
 
 .btn-vk {
   background: url('../img/sprite.png') no-repeat, #000;
-  background-position: 9px -27px
+  background-position: 9px -27px;
 }
 
 .btn-vk:hover {
-  background-position: 9px -68px
+  background-position: 9px -68px;
 }
 
 .btn-fb {
