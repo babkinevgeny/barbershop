@@ -7,15 +7,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "PT Sans Narrow", Arial, sans-serif;
-  color: black;
-  background: url('../img/background.jpg') no-repeat;
-  background-position: top center;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+  font-size: 14px;
+  color: #ffffff;
+  background: #000000 url('../img/background.jpg') no-repeat center top;
 }
 
 .container {
@@ -30,18 +24,20 @@ body {
 }
 
 .navigation {
-
+  width: 780px;
+  min-height:  70px;
 }
 
 .navigation-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  float: left;
 }
 
 .navigation-item {
   display: inline-block;
+  vertical-align: middle;
+  line-height: 20px;
 }
 
 .navigation-link {
@@ -60,28 +56,59 @@ body {
 }
 
 .user-block {
-  float: right;
+  max-width: 140px;
+  min-height: 70px;
+  text-align: right;
+  line-height: 20px;
+}
+
+.user-block .navigation-link {
+  padding-left: 50px;
+  position: relative;
+}
+
+.user-block .navigation-link::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: red;
+  position: absolute;
+  top: 27px;
+  left: 25px;
+  background: url('../img/sprite.png');
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.user-block:hover .navigation-link::before {
+  opacity: 1;
+}
+
+
+.page-header .container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
   display: block;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 25px;
 }
 
 .features {
-
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
 }
 
 .features-item {
-  float: left;
-  max-width: 300px;
-  margin-right: 30px;
-}
-
-.features-item:last-child {
-  float: right;
-  margin-right: 0;
+  min-height: 175px;
+  width: 300px;
 }
 
  .features-title {
@@ -91,7 +118,7 @@ body {
   display: block;
   text-align: center;
   font-weight: bold;
-  padding-bottom: 35px;
+  padding-bottom: 45px;
   position: relative;
 }
 
@@ -103,7 +130,7 @@ body {
   background-color: white;
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 4px;
   margin-left: -10px;
   transform: rotate(45deg);
 }
@@ -120,32 +147,23 @@ body {
 }
 
 .index-content {
-  background: url('../img/index-content-bg.jpg');
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  background: url('../img/index-content-shadow.png') no-repeat center, #f8f5f2 url('../img/index-content-bg.jpg');
+  padding: 50px 80px;
   margin-bottom: 35px;
 }
 .index-content-left {
+  width: 380px;
+  min-height: 330px;
   position: relative;
-  float: left;
-  padding: 55px 40px 55px 80px;
-  width: 470px;
-  margin-right: 90px;
 }
 
 .index-content-right {
-  float: left;
-  padding: 55px 0;
   width: 300px;
-}
-.index-content-left::after {
-  content: '';
-  display: block;
-  width: 8px;
-  height: 278px;
-  background: url('../img/index-content-shadow.png') no-repeat;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  margin-top: -139px;
+  min-height: 330px;
 }
 
 .title {
@@ -259,9 +277,16 @@ body {
 }
 
 .page-footer {
-  background: url('../img/page-footer-bg.jpg');
+  margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
+  background: url('../img/page-footer-bg.jpg');
+}
+
+.page-footer .container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
 }
 
 .page-footer p {
@@ -283,14 +308,15 @@ body {
   line-height: 24px;
 }
 .footer-contacts {
-  width: 310px;
-  float: left;
+  width: 320px;
+  min-height: 90px;
+  margin-right: 60px;
 }
 
 .footer-social {
-  float: left;
-  width: 320px;
-  padding: 0 90px;
+  width: 180px;
+  min-height: 90px;
+  padding: 0 20px;
   font-size: 0;
 }
 .footer-social p,
@@ -312,14 +338,43 @@ body {
   color: #000;
 }
 
+.btn-vk {
+  background: url('../img/sprite.png') no-repeat, #000;
+  background-position: 9px -27px;
+}
+
+.btn-vk:hover {
+  background-position: 9px -68px;
+}
+
+.btn-fb {
+  background: url('../img/sprite.png') no-repeat, #000;
+  background-position: 15px -113px;
+}
+
+.btn-fb:hover {
+  background-position: 15px -160px;
+}
+
+.btn-inst {
+  background: url('../img/sprite.png') no-repeat, #000;
+  background-position: 12px -207px;
+}
+.btn-inst:hover {
+  background-position: 12px -253px;
+}
+
+.btn-copyright {
+  margin: 0 auto;
+}
+
 .btn-social:last-child {
   margin-right: 0;
 }
 
 .footer-copyright {
-  float: right;
-}
-
-.footer-copyright {
-
+  width: 160px;
+  min-height: 90px;
+  padding: 0 10px;
+  margin-left: auto;
 }
