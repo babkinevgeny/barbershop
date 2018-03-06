@@ -340,28 +340,28 @@ body {
 
 .btn-vk {
   background: url('../img/sprite.png') no-repeat, #000;
-  background-position: 9px -28px
+  background-position: 9px -27px
 }
 
 .btn-vk:hover {
-  background-position: 9px -69px
+  background-position: 9px -68px
 }
 
 .btn-fb {
   background: url('../img/sprite.png') no-repeat, #000;
-  background-position: 0 -123px;
+  background-position: 15px -113px;
 }
 
 .btn-fb:hover {
-  background-position: 0 -170px;
+  background-position: 15px -160px;
 }
 
 .btn-inst {
   background: url('../img/sprite.png') no-repeat, #000;
-  background-position: 0 -217px;
+  background-position: 12px -207px;
 }
 .btn-inst:hover {
-  background-position: 0 -263px;
+  background-position: 12px -253px;
 }
 
 .btn-copyright {
